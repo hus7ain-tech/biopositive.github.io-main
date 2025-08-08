@@ -354,123 +354,90 @@
         </div>
       </section>
 
-      <div id="about-us">
-        <div class="text-center mt-4">
-          <h2
-            class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white"
-          >
-            About
-            <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500"
-              >Us</mark
-            >
-          </h2>
-          <p
-            class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 text-justify flex justify-center p-4 align-center"
-          >
-            We are working on microbial fuel cell which help in generating
-            electricity also degradation of toxic pollutants.
-            <br />
-            Also we are working on biohydrogen production for Sustainable energy
-            development by using different leftovers waste.
-          </p>
-        </div>
-      </div>
-      <div>
-        <h2 class="text-4xl font-extrabold dark:text-white text-center py-4">
+      <div class="py-8 bg-gray-50 dark:bg-gray-900">
+        <h2 class="text-4xl font-extrabold dark:text-white text-center mb-6">
           Our Achievements
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="grid gap-4">
-            <div>
+
+        <!-- Carousel Container -->
+        <div class="relative">
+          <!-- Scroll Buttons -->
+          <button
+            onclick="scrollLeft()"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full shadow-md hover:bg-blue-700 z-10"
+          >
+            &#10094;
+          </button>
+          <button
+            onclick="scrollRight()"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full shadow-md hover:bg-blue-700 z-10"
+          >
+            &#10095;
+          </button>
+
+          <!-- Scrollable Images -->
+          <div
+            id="achievementCarousel"
+            class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth px-10"
+          >
+            <!-- Single Card -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
               <img
-                class="h-auto max-w-full rounded-lg"
                 src="./img/3rd Position at Uttaranchal University.jpg"
                 alt="3rd Position at Uttaranchal University"
+                class="w-full h-48 object-cover"
               />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  3rd Position
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Awarded at Uttaranchal University.
+                </p>
+              </div>
             </div>
-            <div>
+
+            <!-- Card 2 -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
               <img
-                class="h-auto max-w-full rounded-lg"
                 src="./img/First Position (ICCSSD 2024)- Oral Presentation, Sharda University.jpeg"
-                alt="First Position for Oral Presentation at ICCSSD 2024, Sharda University"
+                alt="First Position at ICCSSD 2024"
+                class="w-full h-48 object-cover"
               />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  1st Position
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Oral Presentation at ICCSSD 2024.
+                </p>
+              </div>
             </div>
-            <div>
+
+            <!-- Card 3 -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
               <img
-                class="h-auto max-w-full rounded-lg"
                 src="./img/Winner at Best Startup Idea 2024, Sharda university.png"
-                alt="Winner for Best Startup Idea 2024, Sharda University"
+                alt="Best Startup Idea 2024"
+                class="w-full h-48 object-cover"
               />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Best Startup Idea
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Winner at Sharda University 2024.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="your_image_path_here.jpg"
-                alt="Description of your achievement"
-              />
-            </div>
+
+            <!-- Add more cards here -->
           </div>
         </div>
       </div>
