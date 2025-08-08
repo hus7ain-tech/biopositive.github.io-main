@@ -6,11 +6,29 @@
     <title>Bio-Positive Lab - Home</title>
     <!-- Use Tailwind CSS CDN for styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Add GSAP CDN in head before </head> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
     <style>
       /* Optional: Use a modern font for better aesthetics */
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
       body {
         font-family: "Inter", sans-serif;
+      }
+      /* For WebKit browsers (Chrome, Safari, Edge) */
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* For Firefox */
+      .hide-scrollbar {
+        scrollbar-width: none;
+      }
+
+      /* For Internet Explorer and older Edge */
+      .hide-scrollbar {
+        -ms-overflow-style: none;
       }
     </style>
   </head>
@@ -211,16 +229,18 @@
 
         <!-- Card 1: Algae Cultivation -->
         <div
-          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10"
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
         >
           <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
               Algae Cultivation
             </h3>
             <p class="text-white/50 leading-relaxed text-lg">
-              This is a short description for the card. The content on this side
-              can be easily customized to fit your needs, whether it's a product
-              description, a team member bio, or a blog post summary.
+              Algae cultivation under different light sources significantly
+              affects their growth rate, pigment production, and biochemical
+              composition. Exposure to red and blue LED lights often enhances
+              photosynthetic efficiency and biomass yield compared to white or
+              fluorescent lighting.
             </p>
           </div>
           <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
@@ -228,23 +248,24 @@
               src="/img/Lab works/Algae Cultivation.jpeg"
               onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
               alt="A simple card illustration"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
             />
           </div>
         </div>
 
         <!-- Card 2: Dark Fermentation -->
         <div
-          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10"
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
         >
           <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
               Dark Fermentation
             </h3>
             <p class="text-white/50 leading-relaxed text-lg">
-              This is a short description for the card. The content on this side
-              can be easily customized to fit your needs, whether it's a product
-              description, a team member bio, or a blog post summary.
+              Dark fermentation is an anaerobic process where microorganisms
+              break down organic substrates to produce hydrogen and other
+              by-products without the need for light. It offers a sustainable
+              method for biohydrogen production using various organic wastes.
             </p>
           </div>
           <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
@@ -252,23 +273,24 @@
               src="/img/Lab works/Dark Fermentation.jpeg"
               onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
               alt="A simple card illustration"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
             />
           </div>
         </div>
 
         <!-- Card 3: Flat Bed and Bubble Column Photobioreactor -->
         <div
-          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10"
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
         >
           <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
               Flat Bed and Bubble Column Photobioreactor
             </h3>
             <p class="text-white/50 leading-relaxed text-lg">
-              This is a short description for the card. The content on this side
-              can be easily customized to fit your needs, whether it's a product
-              description, a team member bio, or a blog post summary.
+              Flat panel and bubble column photobioreactors are commonly used
+              for algae cultivation due to their efficient light distribution
+              and gas exchange. Flat panels offer high surface-to-volume ratios,
+              while bubble columns ensure effective mixing through air sparging.
             </p>
           </div>
           <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
@@ -276,23 +298,24 @@
               src="/img/Lab works/Flat Bed and bubble column photobioreactor.jpeg"
               onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
               alt="A simple card illustration"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
             />
           </div>
         </div>
 
-        <!-- Card 4: H-type MFC -->
+        <!-- Card 4: Microbial Fuel Cell -->
         <div
-          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10"
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
         >
           <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
-              H-type MFC
+              Microbial Fuel Cell
             </h3>
             <p class="text-white/50 leading-relaxed text-lg">
-              This is a short description for the card. The content on this side
-              can be easily customized to fit your needs, whether it's a product
-              description, a team member bio, or a blog post summary.
+              Microbial fuel cells (MFCs) generate electricity by harnessing the
+              metabolic activity of microbes that oxidize organic matter. They
+              offer a sustainable approach for simultaneous wastewater treatment
+              and renewable energy production.
             </p>
           </div>
           <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
@@ -300,23 +323,24 @@
               src="/img/Lab works/H-Type MFC.jpeg"
               onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
               alt="A simple card illustration"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
             />
           </div>
         </div>
 
         <!-- Card 5: Microbial Desalination Cell -->
         <div
-          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10"
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
         >
           <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
               Microbial Desalination Cell
             </h3>
             <p class="text-white/50 leading-relaxed text-lg">
-              This is a short description for the card. The content on this side
-              can be easily customized to fit your needs, whether it's a product
-              description, a team member bio, or a blog post summary.
+              Microbial desalination cells (MDCs) use electroactive bacteria to
+              remove salts from saline water while simultaneously generating
+              electricity. They present a promising eco-friendly solution for
+              water desalination and energy recovery.
             </p>
           </div>
           <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
@@ -324,23 +348,24 @@
               src="/img/Lab works/Microbial Desalination Cell.jpeg"
               onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
               alt="A simple card illustration"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
             />
           </div>
         </div>
 
         <!-- Card 6: Raceway Pond -->
         <div
-          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10"
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
         >
           <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
               Raceway Pond
             </h3>
             <p class="text-white/50 leading-relaxed text-lg">
-              This is a short description for the card. The content on this side
-              can be easily customized to fit your needs, whether it's a product
-              description, a team member bio, or a blog post summary.
+              A raceway pond is a shallow, open-channel bioreactor designed in a
+              looped track format for large-scale algae cultivation. It uses
+              paddle wheels to circulate water and ensure uniform light and
+              nutrient distribution.
             </p>
           </div>
           <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
@@ -348,8 +373,226 @@
               src="/img/Lab works/Raceway Pond (2).jpeg"
               onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
               alt="A simple card illustration"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
             />
+          </div>
+        </div>
+
+        <!-- Card 7: Microbial Electrolysis Cell -->
+        <div
+          class="bg-blue-600/10 rounded-lg shadow-md overflow-hidden max-w-5xl w-full flex flex-col md:flex-row mb-10 transition duration-300 transform hover:scale-105 hover:shadow-xl"
+        >
+          <div class="p-8 md:p-12 flex-1 flex flex-col justify-center">
+            <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
+              Microbial Electrolysis Cell
+            </h3>
+            <p class="text-white/50 leading-relaxed text-lg">
+              Microbial electrolysis cells (MECs) utilize electroactive microbes
+              and a small external voltage to produce hydrogen from organic
+              waste. They offer a sustainable approach for simultaneous waste
+              treatment and renewable hydrogen generation.
+            </p>
+          </div>
+          <div class="flex-1 w-full md:w-1/2 h-64 md:h-80">
+            <img
+              src="/img/Lab works/Microbial Electrolysis Cell.jpeg"
+              onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+              alt="A simple card illustration"
+              class="w-full h-full object-cover transition duration-300 hover:opacity-90"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Instruments Section -->
+      <section class="py-12 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-screen-xl mx-auto px-4">
+          <!-- Section Heading -->
+          <h2
+            class="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-10"
+          >
+            Our Instruments
+          </h2>
+
+          <!-- Cards Grid -->
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Instrument Card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/Heating Digester.jpeg"
+                alt="Heating Digester"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  Heating Digester
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Provides controlled heating for digestion of samples.
+                </p>
+              </div>
+            </div>
+
+            <!-- Instrument card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/COD Meter.jpeg"
+                alt="Heating Digester"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  COD Meter
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Measures the chemical oxygen demand (COD) in water samples.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/Gas Chromatography.jpeg"
+                alt="Gas Chromatography"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  Gas Chromatography
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Separates and analyzes compounds in a gas mixture.
+                </p>
+              </div>
+            </div>
+            <!-- Card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/Muffle Furnace.jpeg"
+                alt="Muffle Furnace"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  Muffle Furnace
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Used for high-temperature ashing, material testing, and heat
+                  treatment of samples.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/Peristaltic pump.jpeg"
+                alt="Heating Digester"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  Peristaltic Pump
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Provides precise and controlled fluid transfer for various
+                  applications.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/Potentiostat.jpeg"
+                alt="Potentiostat"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  Potentiostat
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Provides controlled potential for electrochemical
+                  measurements.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/UV-Vis Spectrophotometer.jpeg"
+                alt="UV-Vis Spectrophotometer"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  UV-Vis Spectrophotometer
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Provides precise and accurate measurements of light absorbance
+                  in samples.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src="./img/instruments/DC Power Supply.jpeg"
+                alt="DC Power Supply"
+                onerror="this.src='https://placehold.co/800x600/E5E7EB/4B5563?text=Image+Not+Found'"
+                class="w-full h-48 object-cover transition duration-300 hover:opacity-90"
+              />
+              <div class="p-6">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  DC Power supply
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Provides stable and adjustable voltage and current for various
+                  applications.
+                </p>
+              </div>
+            </div>
+
+            <!-- More cards can be added here in same pattern -->
           </div>
         </div>
       </section>
@@ -378,14 +621,14 @@
           <!-- Scrollable Images -->
           <div
             id="achievementCarousel"
-            class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth px-10"
+            class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth px-10 hide-scrollbar"
           >
             <!-- Single Card -->
             <div
               class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
             >
               <img
-                src="./img/3rd Position at Uttaranchal University.jpg"
+                src="./img/achievements/3rd Position at Uttaranchal University.jpg"
                 alt="3rd Position at Uttaranchal University"
                 class="w-full h-48 object-cover"
               />
@@ -404,16 +647,16 @@
               class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
             >
               <img
-                src="./img/First Position (ICCSSD 2024)- Oral Presentation, Sharda University.jpeg"
-                alt="First Position at ICCSSD 2024"
+                src="./img/achievements/Best Oral Presentation at Indraprastha University.jpg"
+                alt="Best Oral Presentation at Indraprastha University"
                 class="w-full h-48 object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold dark:text-white">
-                  1st Position
+                  Best Oral Presentation
                 </h3>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">
-                  Oral Presentation at ICCSSD 2024.
+                  Awarded at Indraprastha University.
                 </p>
               </div>
             </div>
@@ -423,16 +666,148 @@
               class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
             >
               <img
-                src="./img/Winner at Best Startup Idea 2024, Sharda university.png"
+                src="./img/achievements/First Position (ICCSSD 2024)- Oral Presentation, Sharda University.jpeg"
                 alt="Best Startup Idea 2024"
                 class="w-full h-48 object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold dark:text-white">
-                  Best Startup Idea
+                  First position
                 </h3>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">
-                  Winner at Sharda University 2024.
+                  Awarded at ICCSSD 2024, Sharda University.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/First rank (Anveshan 2024) North Zone.jpg"
+                alt="First rank (Anveshan 2024) North Zone"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  First rank
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Anveshan 2024, National Zone
+                </p>
+              </div>
+            </div>
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/Second rank (Anveshan 2024) National Level.jpg"
+                alt="Second rank (Anveshan 2024) National Level"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Second rank
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Anveshan 2024, National Level
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/Second Rank (ICSDG 2025)- Oral Presentation, Sharda University.jpeg"
+                alt="Second Rank (ICSDG 2025)- Oral Presentation, Sharda University"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Second Rank
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  ICSDG 2025, Sharda University.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/Soumyajit Best oral ppt.jpeg"
+                alt="Second Rank (ICSDG 2025)- Oral Presentation, Sharda University"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Soumyajit Chandra,Best Oral Presentation
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  ICSTVB 2025.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/Third Position (ICSDG 2025)- Oral Presentation, Sharda University.jpeg"
+                alt="Third Position (ICSDG 2025)- Oral Presentation, Sharda University"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Third Position, Oral Presentation
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  ICSDG 2025, Sharda University.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/Third position at PIC 2025, Sharda University.jpeg"
+                alt="Third position at PIC 2025, Sharda University"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Third Position, Oral Presentation
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  PIC 2025, Sharda University.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD  -->
+            <div
+              class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800"
+            >
+              <img
+                src="./img/achievements/Winner at Best Startup Idea 2024, Sharda university.png"
+                alt="Winner at Best Startup Idea 2024, Sharda university"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold dark:text-white">
+                  Winner at Best Startup Idea 2024
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Sharda University.
                 </p>
               </div>
             </div>
@@ -455,10 +830,71 @@
         </p>
       </div>
     </footer>
+
+    <!-- JAva script -->
     <script
       src="https://kit.fontawesome.com/fd675999f3.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+    <script>
+      const carousel = document.getElementById("achievementCarousel");
+      const scrollAmount = 300;
+
+      // Add event listeners instead of using inline onclick
+      document
+        .querySelector(".relative button:first-of-type")
+        .addEventListener("click", () => {
+          carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth",
+          });
+        });
+
+      document
+        .querySelector(".relative button:last-of-type")
+        .addEventListener("click", () => {
+          carousel.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        });
+    </script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Hero Section Animation
+      gsap.from("header", {
+        y: -80,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      gsap.from("main h1", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.3,
+        ease: "power3.out",
+      });
+
+      gsap.from("main p", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 0.5,
+        ease: "power3.out",
+      });
+
+      gsap.from("main a", {
+        opacity: 0,
+        y: 20,
+        duration: 0.8,
+        delay: 0.8,
+        stagger: 0.5,
+        ease: "power3.out",
+      });
+    </script>
   </body>
 </html>
