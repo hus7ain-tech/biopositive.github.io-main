@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio-Positive Lab - Members</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <!-- Header remains unchanged -->
+    <header>
+      <!-- ...existing nav code... -->
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./img/logo.svg" class="h-8" alt="Biopositive Logo" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Research
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="./ongoing_research.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Ongoing Research</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./patents.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Patents</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="./members.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Members</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./publication.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+            <div
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            >
+              Members of our team
+            </h2>
+            <p
+              class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
+            >
+              A team of people with curious minds and diverse skills who
+              maintain and give life to Bio-Positive Lab.
+            </p>
+          </div>
+
+
+          
+          <!-- PI Card remains unchanged -->
+          <!-- Dr. Soumya Pandit - Special Highlighted Card -->
+
+          <div class="flex flex-wrap flex-col md:flex-row bg-blue-50 border border-blue-200 rounded-lg shadow-lg dark:bg-gray-900 dark:border-gray-700 p-4 mb-8">
+            <!-- Image Section -->
+            <div class="flex-1 mx-auto max-w-max md:columns-s">
+              <img
+                class="h-full w-full object-cover lg:rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="./img/image.png"
+                width="300px"
+                height="300px"
+                alt="Dr. Soumya Pandit photograph"
+              />
+            </div>
+
+  <!-- Content Section -->
+  <div class="flex-1 p-5 my-auto">
+    <h3 class="text-2xl font-bold tracking-tight text-blue-900 dark:text-white">
+      <a href="#">Dr. Soumya Pandit</a>
+    </h3>
+    <span class="text-md text-gray-700 dark:text-gray-400 font-medium">Principal Investigator / Lab Incharge</span>
+    <p class="mt-3 mb-4 font-semibold text-gray-600 dark:text-gray-400">
+      Area of Interest: Microbial electrochemical cell biofilm and biofouling; biohythane; nanomaterial synthesis and
+      characterization; microalgal biomass production; bioenergy and biofuel.
+    </p>
+
+    <!-- Read More Button with Popover -->
+    <div class="flex justify-center">
+      <button
+        data-popover-target="popover-click"
+        data-popover-trigger="click"
+        type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Read More
+      </button>
+
+      <div
+        data-popover
+        id="popover-click"
+        role="tooltip"
+        class="absolute z-10 invisible inline-block w-[90%] md:w-[70%] text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+      >
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+          <h3 class="font-semibold text-gray-900 dark:text-white">Description</h3>
+        </div>
+        <div class="px-3 py-2">
+          <p>
+            Dr. Soumya Pandit is an associate professor and heads the Bio-Positive Lab at Sharda University in Greater Noida,
+            Delhi NRC, India. His expertise includes Bioprocess Engineering, Industrial Biotechnology, Environmental
+            Microbiology, and Waste Management. He earned his doctorate from the Department of Biotechnology at the
+            Indian Institute of Technology, Kharagpur, and completed postdoctoral research at The Zuckerberg Institute for
+            Water Research (ZIWR), Ben-Gurion University of the Negev, Israel. He has received post-doctoral fellowships
+            from the Planning and Budget Commission of Israel and North West University, South Africa. Dr. Pandit has a
+            strong publication record in international conferences, particularly in environmental biotechnology and
+            bioenergy, with an H-Index of 24.
+          </p>
+        </div>
+        <div data-popper-arrow></div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <ul class="flex gap-3 pt-3 mt-3 space-x-4 sm:mt-0 justify-center">
+      <li>
+        <a href="#" class="text-gray-500 hover:text-blue-700 dark:hover:text-white">
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-500 hover:text-blue-700 dark:hover:text-white">
+          <i class="fa-solid fa-envelope fa-xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-500 hover:text-blue-700 dark:hover:text-white">
+          <i class="fa-brands fa-google-scholar fa-xl"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+        </div>
+       <div class="grid gap-8 m-6 -mt-6 pt-4 lg:mb-16 md:grid-cols-2">
+  <!-- Ankit Kumar -->
+  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full sm:w-48">
+      <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/ankit.png" alt="Ankit Kumar" />
+    </div>
+    <div class="p-5">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Ankit Kumar</h3>
+      <span class="text-gray-500 dark:text-gray-400">PhD Scholar</span>
+      <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+        Advancing Microbial Fuel Cell Technology for Efficient Bioelectricity Generation and Wastewater Treatment.
+      </p>
+    </div>
+  </div>
+
+  <!-- Anusha Vempaty -->
+  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full sm:w-48">
+      <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/anusha.png" alt="Anusha Vempaty" />
+    </div>
+    <div class="p-5">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Anusha Vempaty</h3>
+      <span class="text-gray-500 dark:text-gray-400">PhD Scholar</span>
+      <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+        Enhancing Microbial Fuel Cell Performance for Sustainable Energy Production and Environmental Remediation.
+      </p>
+    </div>
+  </div>
+
+  <!-- Rahul Kumar Mishra -->
+  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full sm:w-48">
+      <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/rahul.png" alt="Rahul Kumar Mishra" />
+    </div>
+    <div class="p-5">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Rahul Kumar Mishra</h3>
+      <span class="text-gray-500 dark:text-gray-400">PhD Scholar</span>
+      <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+        Development and Performance Enhancement of Microbial Desalination Cells for Sustainable Water Treatment and Bioelectricity Generation.
+      </p>
+    </div>
+  </div>
+
+  <!-- Soumyajit Chandra -->
+  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full sm:w-48">
+      <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/soumya.png" alt="Soumyajit Chandra" />
+    </div>
+    <div class="p-5">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Soumyajit Chandra</h3>
+      <span class="text-gray-500 dark:text-gray-400">PhD Scholar</span>
+      <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+        Maximizing Bioenergy Production by combining Dark Fermentation with Bio-electrochemical System.
+      </p>
+    </div>
+  </div>
+
+  <!-- Rakhi Rajput -->
+  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full sm:w-48">
+      <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/rakhi.png" alt="Rakhi Rajput" />
+    </div>
+    <div class="p-5">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Rakhi Rajput</h3>
+      <span class="text-gray-500 dark:text-gray-400">PhD Scholar</span>
+      <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+        Production of Gamma Polyglutamic Acid from organic waste through fermentation by using bacteria for revolutionizing bioplastics.
+      </p>
+    </div>
+  </div>
+
+  <!-- Rajeev Kumar Singh -->
+  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full sm:w-48">
+      <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/rajeev.png" alt="Rajeev Kumar Singh" />
+    </div>
+    <div class="p-5">
+      <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Rajeev Kumar Singh</h3>
+      <span class="text-gray-500 dark:text-gray-400">PhD Scholar</span>
+      <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+        Toxic dye degradation and Bioelectricity Generation using a bio-electrochemical system.
+      </p>
+    </div>
+  </div>
+</div>
+
+      </section>
+    </main>
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-center"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2024 <a href="#" class="hover:underline">Bio-Positive Lab</a>. All
+          Rights Reserved.
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/fd675999f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+
+  </body>
+</html>

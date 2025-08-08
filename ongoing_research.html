@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio-Positive Lab - Research</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <header>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./img/logo.svg" class="h-8" alt="Biopositive Logo" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                >
+                  <!-- block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 -->
+                  Research
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="./ongoing_research.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Ongoing Research</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./patents.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Patents</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="./members.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Members</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./publication.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="px-10 py-3 text-justify max-w-6xl mx-auto">
+      <section>
+        <h2 class="text-2xl text-center py-3">
+          Ongoing Research at Bio-Positive Lab
+        </h2>
+        <p>
+          We are a team of researchers passionate about developing sustainable
+          solutions for the future. Our current research focuses on several
+          exciting areas:
+        </p>
+        <div class="flex p-4 gap-8 flex-wrap flex-col md:flex-row">
+          <div class="flex-1">
+            <h2 class="text-xl text-center py-2">Area of Interests</h2>
+            <ul class="flex flex-col gap-2 list-decimal">
+              <li>
+                <span class="font-bold"
+                  >Microbial Electrochemical Technologies:</span
+                >
+                We investigate the use of microbes in bioelectrochemical systems
+                for renewable energy production and wastewater treatment. This
+                includes studying biofilm formation and mitigation strategies to
+                optimize these systems.
+              </li>
+              <li>
+                <span class="font-bold">Biohythane Production:</span> We explore
+                the biological conversion of organic matter into biohythane, a
+                clean-burning fuel composed of hydrogen and methane. This
+                research focuses on developing efficient and cost-effective
+                methods for biohythane production.
+              </li>
+              <li>
+                <span class="font-bold"
+                  >Nanomaterials for Bioenergy Applications:</span
+                >
+                We design and characterize novel nanomaterials for improved
+                efficiency in bioenergy production processes. These
+                nanomaterials can be used to enhance catalysts, improve mass
+                transfer, or develop new types of bioreactors.
+              </li>
+              <li>
+                <span class="font-bold">Microalgal Biomass Production:</span> We
+                investigate the cultivation of microalgae for biofuel production
+                and other applications. This research focuses on optimizing
+                growth conditions, developing harvesting techniques, and
+                exploring the potential of microalgae for bioremediation.
+              </li>
+              <li>
+                <span class="font-bold"
+                  >Sustainable Bioenergy and Biofuels:</span
+                >
+                Our research aims to develop innovative bioenergy and biofuel
+                technologies that are environmentally friendly, efficient, and
+                scalable. We explore various approaches to achieve a sustainable
+                bioeconomy.
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <h2 class="text-xl text-center py-2">Funded Projects</h2>
+            <ul class="list-decimal flex flex-col gap-2">
+              <li>
+                <ul>
+                  <li>
+                    <span class="font-bold">Project title:</span> Maximizing
+                    energy recovery using microalgae in novel microbial carbon
+                    capture cells via Carbon dioxide sequestration.
+                  </li>
+                  <li>
+                    <span class="font-bold">By:</span> MSME Hackathon, Govt. of
+                    India.
+                  </li>
+                  <li>
+                    <span class="font-bold">Category:</span> Waste to Wealth
+                    creation, Circular solutions & waste management.
+                  </li>
+                  <li><span class="font-bold">Role:</span> PI</li>
+                </ul>
+              </li>
+
+              <li>
+                <ul>
+                  <li>
+                    <span class="font-bold">Project title:</span> Optimized
+                    Modular Stack Microbial Fuel Cell (MFC) based Energy
+                    Harvesting for Wireless Applications.
+                  </li>
+                  <li>
+                    <span class="font-bold">By:</span> iHub Divya Sampark,
+                    Indian Institute of Technology, Roorkee.
+                  </li>
+                  <li><span class="font-bold">Role:</span> Co-PI</li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="text-xl text-center py-2">
+              Completed Seed Grant Projects
+            </h2>
+            <ol class="list-decimal flex flex-col gap-2">
+              <li>
+                <ul>
+                  <li>
+                    <span class="font-bold">Project title:</span> Application of
+                    Nickel oxide-based cathode and reduced graphene oxide-based
+                    anode in Microbial electrolysis cell for improved
+                    biohydrogen production.
+                  </li>
+                  <li>
+                    <span class="font-bold">By:</span> Sharda University RDC.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <span class="font-bold">Project title:</span> Design and
+                    development of Microbial desalination cell.
+                  </li>
+                  <li>
+                    <span class="font-bold">By:</span> Sharda University Launch
+                    Pad.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-white rounded-lg shadow m-4 dark:bg-gray-800 bottom-0 w-[95%]"
+    >
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-center"
+      >
+        <p>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024
+            <a href="./index.html" class="hover:underline">Bio-Positive Lab</a>.
+            All Rights Reserved.
+          </span>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/fd675999f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio-Positive Lab - Patents</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <header>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./img/logo.svg" class="h-8" alt="Biopositive Logo" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                >
+                  <!-- block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 -->
+                  Research
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="./ongoing_research.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Ongoing Research</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./patents.html"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Patents</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="./members.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Members</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./publication.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex flex-col items-center justify-center p-4">
+      <h1
+        class="mb-4 text-2xl text-center mt-8 font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white"
+      >
+        Patents We've Filed/Published
+      </h1>
+      <p
+        class="text-gray-900 dark:text-white text-center mb-4 text-lg md:text-xl lg:text-2xl font-bold"
+      >
+        Applicant: Sharda University
+      </p>
+      <div class="p-5 border-b border-gray-200 dark:border-gray-700">
+        <h2 class="text-gray-900 dark:text-white mb-4">
+          <i class="fa-solid fa-arrow-right"></i> 2021 - 9 Patents
+        </h2>
+        <ol
+          class="max-w-6xl pl-12 space-y-3 text-gray-500 list-decimal dark:text-gray-400 text-justify"
+        >
+          <li>
+            Title: Semi-aromatic polyester nanocomposite and method for
+            preparation thereof.: Patent authority: Sharda University. Inventor:
+            Piyush Kumar Gupta; Soumya Pandit, Rekha Gahtori, Bableen flora,
+            Shiva Chander, Sunny Dholpuriya, Sharad Agarwal Patent:
+            202111040352. Patent filed: September, 2021.
+          </li>
+          <li>
+            Title: bimetallic-semi-aromatic polyester nanocomposite and method
+            for preparation thereof. Patent authority: Sharda University.
+            Inventor: Piyush Kumar Gupta; Soumya Pandit, Rekha Gahtori, Bableen
+            flora. Patent: 202111040353. Patent filed: September, 2021.
+          </li>
+          <li>
+            Title: Biochar composite impregnated anode and method for
+            fabrication thereof, Inventors: Meenal Gupta, Soumya Pandit, Nishit
+            Savla, Stephane, Yogesh Kumar, Santimoy Khilari, Pushpa Singh,
+            Patent no. 202111040351, Publication Date: 08.10.2021
+          </li>
+          <li>
+            Title: Multi electrode, horizontal Serpentine flow microbial fuel
+            cell. Patent authority: Sharda University. Patent: 202111007473.
+            Patent filed: 26/02/ 2021. Inventor: Abhilasha Singh Mathuriya,
+            Soumya Pandit.
+          </li>
+          <li>
+            Title: Functionalized Zeolite-Cement Separator composite and method
+            for preparation thereof. Patent authority: Sharda University. Patent
+            No: 202111007471. Patent filed: 26/02/ 2021. Inventor: Abhilasha
+            Singh Mathuriya, Soumya Pandit.
+          </li>
+          <li>
+            Title: Anti-biofouling composition and method for preparation
+            thereof. Patent: IN 202111044362. Patent filed: 30/09/ 2021.
+            Inventor: Abhilasha Singh Mathuriya, Sonia Khanna, Soumya Pandit.
+          </li>
+          <li>
+            Title: Anti-microbial chitosan-based nanoparticles composition and
+            method for fabrication thereof, Inventors: Piyush Kumar Gupta,
+            Soumya Pandit, Shaily Chauhan, Rekha Gahtori, Siva Chander
+            Chabattula, Hem Chandra Joshi, S Shankara Narayanan, Mohit Sahni, R.
+            Ranjithkumar, P. Senthilkumar, Patent no. 202111040350, Publication
+            Date: 01.10.2021.
+          </li>
+          <li>
+            Title: A polymer electrolyte composition and method of preparation
+            thereof, Patent: Application number: 202111048926; Patent filed:
+            26.10.2021 Inventors-Yogesh Kumar, Soumya Pandit, Meenal Gupta
+            Shilpa Yadav.
+          </li>
+          <li>
+            Title: Method for synthesis of carbon dots, Inventors: S Shankara
+            Narayanan, Soumya Pandit, Vivek Sharma, Piyush Kumar Gupta, Ram
+            Prasad, Kanupriya, Ankit Kumar, Patent no. 202111052403, Publication
+            Date: 17.12.2021.
+          </li>
+        </ol>
+        <h2 class="text-gray-900 dark:text-white my-4">
+          <i class="fa-solid fa-arrow-right"></i> 2022 - 6 Patents
+        </h2>
+        <ol
+          class="max-w-6xl pl-12 space-y-3 text-gray-500 list-decimal dark:text-gray-400 text-justify"
+        >
+          <li>
+            Title: Ceramic separator-cathode assembly, Inventors: Prasenjit
+            Saha, Soumya Pandit, Abhilasha Singh Mathuriya, Mohit Sahni, Sanjay
+            Kumar, Piyush Kumar Gupta, Santimoy Khilari, Patent no.
+            202211001127, Publication Date: 14.01.2022. Patent Number: 468645,
+            Granted on 13th november 2023.
+          </li>
+          <li>
+            Title: Eco-friendly anode chamber cum separator electrode assembly
+            for microbial electrochemical systems, Inventors: Prasenjit Saha,
+            Upesh Sharma, Soumya Pandit, Abhilasha Singh Mathuriya, Dantuluri
+            Veerabhadra Raju, Mohit Sahni, Piyush Kumar Gupta, Ankit Kumar,
+            Patent no. 202211016725, Publication Date: 24.03.2022
+          </li>
+          <li>
+            Title: Anti-cancer thiosemicarbazone based compound and method for
+            synthesis thereof Inventors-Kanupriya, Sonia Khanna, Neha Verma,
+            Soumya Pandit, Piyush Gupta Shilpa Yadav Patent: Application
+            No-202211010277; Patent filed: 25/02/2022
+          </li>
+          <li>
+            Title: Eco-friendly anode chamber cum separator electrode assembly
+            for microbial electrochemical systems. Inventors: Soumya Pandit,
+            Abhilasha Singh Mathuriya, Chetan Pandit. Patent no. 202211061261,
+            Publication Date: 23.10.22.
+          </li>
+          <li>
+            Title: Multilayer composite separator and method thereof. Inventors:
+            KanuPriya, Abhilasha Singh Mathuriya, Soumya Pandit Patent no.
+            202211044235, Publication Date: 02.08.2022.
+          </li>
+          <li>
+            Title: A microbial desalination cell comprising a perovskite oxide
+            catalyst for oxygen reduction reaction, Inventors: Richa Tomar,
+            Soumya Pandit, Abhilasha Singh Mathuriya, Pramod Kumar Singh, Mohit
+            Sahni, Patent no. 202211021312, Publication Date: 15.04.2022 Patent
+            Number: 429738, Granted on 24th April 2023.
+          </li>
+        </ol>
+        <h2 class="text-gray-900 dark:text-white my-4">
+          <i class="fa-solid fa-arrow-right"></i> 2023 - 8 Patents
+        </h2>
+        <ol
+          class="max-w-6xl pl-12 space-y-3 text-gray-500 list-decimal dark:text-gray-400 text-justify"
+        >
+          <li>
+            Title: A zeolite-bitumen separator for enhanced performance of
+            bioelectrochemical systems and process for preparing the same.
+            Inventors: Abhilasha Singh Mathuriya, KanuPriya, Soumya Pandit
+            Patent no. 202311031784, Publication Date: 04.05.2023.
+          </li>
+          <li>
+            Title: Bioelectrochemical systems for desalination of water and
+            power generation by nano magnetite decorated bioanode. Inventors:
+            Soumya Pandit, Shweta Rai, Shruti Singh, Abhilasha Singh Mathuriya.
+            Patent no. 202311030790, Publication Date: 10. 07.23.
+          </li>
+          <li>
+            Title: Bioremediation of hydrocarbon and simultaneous electricity
+            generation through coculturing of biosurfactant-producing bacteria
+            with electrogenic bacteria. Inventors: Soumya Pandit, Vandana Singh,
+            Tahseena Naaz, Kalpana Sharma. Patent no. 202311037064, Publication
+            Date: 29.05.23.
+          </li>
+          <li>
+            Title: Green and clean biogas production in microbial electrolysis
+            cells with nickel ferrite nanomaterial-based cathode catalyst.
+            Inventors: Subhasree Ray, Ankit Kumar, Kalpana Sharma, Rahul Kumar
+            Mishra, Soumya Pandit, Richa Tomar and Abhilasha Singh Mathuriya.
+            Patent no. 202311036776, Publication Date: 27.05.23.
+          </li>
+          <li>
+            Title: Bio-electrochemical cell for treatment of organic waste Using
+            earthworms Inventors: Kalpana Sharma, Ankit Kumar, Soumya Pandit,
+            Swati Hazra; Dibyajit Lahiri. Patent no. 202311005693, Publication
+            Date: 28.01.23.
+          </li>
+          <li>
+            Title: Microbial co-culture for microbial electrochemical system.
+            Inventors: Vandana Singh, Kalpana Sharma, Ankit Kumar, Soumya
+            Pandit, Piyush K Gupta, Srijoni Banerjee, Sagnik Saha. Patent no.
+            202311003436, Publication Date: 29.05.23.
+          </li>
+          <li>
+            Title: Activated coffee shell husk-portland slag cement separator
+            and method for preparation thereof. Inventors: Parvaiz Ahmad Dar,
+            KanuPriya, Abhilasha Singh Mathuriya, Soumya Pandit Patent no.
+            202311041468, Publication Date: 19.06.23.
+          </li>
+          <li>
+            Title: Green synthesis of alpha-magnetic nanoparticles and its
+            anti-cancer application thereof. Inventors: Shilpa Kumari,
+            KanuPriya, Mohit Sahni, Neha Verma, Soumya Pandit, Anil Kumar.
+            Patent no. 202311051995, Publication Date: 01.09.23.
+          </li>
+        </ol>
+      </div>
+    </main>
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-center"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024 <a href="#" class="hover:underline">Bio-Positive Lab</a>. All
+          Rights Reserved.
+        </span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/fd675999f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+  </body>
+</html>
