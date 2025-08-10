@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bio-Positive Lab - Publications</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
   </head>
   <body class="bg-white dark:bg-gray-900">
     <header>
@@ -76,7 +76,6 @@
                     />
                   </svg>
                 </button>
-                <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
                   class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
@@ -138,441 +137,1364 @@
         Our Publications
       </h1>
 
-      <!-- Journal Publications Section -->
-      <div class="w-full mb-12">
-        <h2 class="text-2xl font-bold dark:text-white mb-4">
-          Journal Publications (2023 - Present)
+      <div id="accordion-collapse" data-accordion="collapse" class="w-full">
+        <h2 id="accordion-collapse-heading-1">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-collapse-body-1"
+            aria-expanded="true"
+            aria-controls="accordion-collapse-body-1"
+          >
+            <span class="text-2xl font-bold">Journal Publications</span>
+            <svg
+              data-accordion-icon
+              class="w-3 h-3 rotate-180 shrink-0"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5 5 1 1 5"
+              />
+            </svg>
+          </button>
         </h2>
-        <hr class="border-gray-200 dark:border-gray-700 mb-4" />
+        <div
+          id="accordion-collapse-body-1"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-1"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+          >
+            <section class="space-y-4">
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[1]</span
+                >
+                Tomar, R., Chandra, S., Pandit, S., Shahid, M., Sharma, K., Raj,
+                S., ... & Joshi, S. J. (2025). Novel ionic liquid-infused
+                PVA-based anion exchange membranes boosting bioelectricity yield
+                from microbial fuel cells. Heliyon, 11(1).
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[2]</span
+                >
+                Chandra, S., Pandey, K. K., Pandit, S., Roy, A., Rajeev, M.,
+                Sharma, K., & Verma, R. (2025). Ultrasonication of microalgal
+                biomass: Acoustics study and enhanced bioelectricity generation
+                in microbial fuel cells. Bioresource Technology, 132289.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[3]</span
+                >
+                Yadav, V., Chandra, S., Mohan, C., Jadhav, D. A., Deb, S.,
+                Pandit, S., ... & Rajeev, M. (2025). Bioelectric Powering of
+                CMOS-Based Low-Power Microcontroller System from Stacked
+                Microbial Fuel Cells. Energy & Fuels, 39(20), 9463-9468.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[4]</span
+                >
+                Chakraborty, S., Chandra, S., Pandit, S., Raj, S., Gill, H.S.,
+                Sharma, K., Bhattacharya, D., Nag, M. and Lahiri, D., 2025.
+                Harnessing the power: the role of dissimilatory metal-reducing
+                bacteria in microbial fuel cells. Archives of Microbiology,
+                207(8), p.176.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[5]</span
+                >
+                Chandra, S., Pandit, S., Roy, A., Rab, S.O., Roy, A.K., Saeed,
+                M., Kumar, A., Sharma, K., Ranjan, N., Raj, S., 2025. Bioenergy
+                recovery from jackfruit waste via biohydrogen production through
+                dark fermentation and power generation through stacked microbial
+                fuel cells. Int. J. Hydrog. Energy 102, 845–855.
+                https://doi.org/10.1016/j.ijhydene.2025.01.044.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[6]</span
+                >
+                Jadhav, D.A., Chendake, A.D., Pandit, S., Mungray, A.K., Jang,
+                J.-H., Kumar, G., Al-Qaradawi, S.Y., Abdelkareem, M.A., Chae,
+                K.-J., 2025. Is the bioelectrochemical system ready for
+                industrial commercialization? J. Power Sources 629, 236001.
+                https://doi.org/10.1016/j.jpowsour.2024.236001.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[7]</span
+                >
+                Kumar, V., Singh, V., Pandit, S., 2025. Advanced omics approach
+                and sustainable strategies for heavy metal microbial remediation
+                in contaminated environments. Bioresour. Technol. Rep. 29,
+                102040. https://doi.org/10.1016/j.biteb.2025.102040.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[8]</span
+                >
+                Kumari, S., Sahni, M., Pandit, S., Verma, N., Hamzah, F.M.,
+                Sharma, K., Priya, K., 2025. Sustainable synthesis of magnetic
+                nanoparticles: Biological applications of Cedrus deodara
+                extract. Curr. Appl. Phys. 72, 1–10.
+                https://doi.org/10.1016/j.cap.2025.01.015.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[9]</span
+                >
+                Pandit, S., Ranjan, N., Verma, R., Sharma, K., Tomar, R.,
+                Hamzah, F.M., 2025. Exploring the multifunctionality of carbon
+                dots: Advances in synthesis, properties, and applications. Curr.
+                Appl. Phys. 71, 106–119.
+                https://doi.org/10.1016/j.cap.2025.01.003.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[10]</span
+                >
+                Sharma, K., Kumar, A., Pandit, S., Singh, V., Jadhav, D.A.,
+                2025. Interplay of Dye Biodegradation and Energy Recovery in a
+                Microbial Fuel Cell with a MnO2-Modified Anode under Optimized
+                Conditions. https://doi.org/10.1061/JHTRBP.HZENG-1429.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[11]</span
+                >
+                Siwach, R., Chandra, S., Kumar, A., Pandit, S., Agrawal, S.,
+                2025. Xylanase-Assisted Bioconversion and Bioelectricity
+                Production in Microbial Fuel Cells: A Novel Strategy for
+                Renewable Energy Generation. Sustain. Chem. Environ. 100215.
+                https://doi.org/10.1016/j.scenv.2025.100215.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[12]</span
+                >
+                Tomar, R., Naaz, T., Pandit, S., Mathuriya, A.S., Jadhav, D.A.,
+                2024. Exploring the potential of metal-doped perovskite-oxides
+                as oxygen reduction catalyst for enhancing the performance of
+                microbial desalination cells. Fuel 356, 129451.
+                https://doi.org/10.1016/j.fuel.2023.129451. IF: 7.8.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[13]</span
+                >
+                Sankhyan, S., Kumar, P., Sonkar, M., Pandit, S., Ranjan, N.,
+                Ray, S., 2024. Characterization of biosurfactant produced
+                through co-utilization of substrates by the novel strain
+                Pseudomonas aeruginosa NG4. Biocatalysis and Agricultural
+                Biotechnology 55, 102988.
+                https://doi.org/10.1016/j.bcab.2023.102988.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[14]</span
+                >
+                Vempaty, A., Sahni, M., Pandit, C., Pandit, S., Mathuriya, A.S.,
+                Chauhan, S., Singh, M., Vyas, P., 2024. Bismuth Ferrite
+                Nanoparticle-Blended Carbon Soot-Based Cathode for Enhanced
+                Power Production in Microbial Fuel Cell. J. Electron. Mater. 53,
+                106–120. https://doi.org/10.1007/s11664-023-10757-4.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[15]</span
+                >
+                Gupta, A., Roy, A., Kaur, K., Rustagi, S., Malik, S., Pandit,
+                S., 2024. Scope of Nanomaterials in Treating Neurological
+                Disorders. OBM Neurobiology 8, 1–22.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[16]</span
+                >
+                Naaz, T., Kumari, S., Sharma, K., Singh, V., Khan, A.A., Pandit,
+                S., Priya, K., Jadhav, D.A., 2024. Bioremediation of hydrocarbon
+                by co-culturing of biosurfactant-producing bacteria in microbial
+                fuel cell with Fe2O3-modified anode. Journal of Environmental
+                Management 351, 119768.
+                https://doi.org/10.1016/j.jenvman.2023.119768.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[17]</span
+                >
+                Pal, D., Banerjee, S., Chandra, S., Das, D., Pandit, S., Roy,
+                A., Hasan, M., Khandaker, M.U., Alreshidi, M.A., 2024. The
+                generation of biohydrogen from pretreated algal biomass in batch
+                fermentation mode. International Journal of Hydrogen Energy.
+                https://doi.org/10.1016/j.ijhydene.2024.01.078.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[18]</span
+                >
+                Paria, S., Pandit, S., Shin, W., Si, S.K., De, A., Maitra, A.,
+                Karan, S.K., Halder, L., Nah, C., Khatua, B.B., 2024.
+                PDMS-ZnSnO3/Ag2O-Based Nanocomposites for Mechanical Energy
+                Harvesting and Antibacterial Applications. ACS Appl. Nano Mater.
+                7, 3793–3805. https://doi.org/10.1021/acsanm.3c05373.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[19]</span
+                >
+                Shah, M.Z., Quraishi, M., Sreejith, A., Pandit, S., Roy, A.,
+                Khandaker, M.U., 2024. Sustainable degradation of synthetic
+                plastics: A solution to rising environmental concerns.
+                Chemosphere 352, 141451.
+                https://doi.org/10.1016/j.chemosphere.2024.141451.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[20]</span
+                >
+                Singh, V., Pandit, C., Roy, A., Pandit, S., Rai, A.K., Rani, A.,
+                Ranjan, N., Rustagi, S., Malik, S., 2024. Degradation of food
+                dyes via biological methods: A state-of-the-art review.
+                Bioresource Technology Reports 25, 101780.
+                https://doi.org/10.1016/j.biteb.2024.101780.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[21]</span
+                >
+                Thakare, M., Pandit, S., Pandit, C., Ray, S., Alkahtani, A.M.,
+                Alabbosh, K.F., Ranjan, N., Geetha, S.J., Joshi, S.J., 2024. A
+                concise review on biorefinery remedies for biomethanol
+                production and processing. Biocatalysis and Agricultural
+                Biotechnology 57, 103061.
+                https://doi.org/10.1016/j.bcab.2024.103061.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[22]</span
+                >
+                Thapa, B.S., Pandit, S., Mishra, R.K., Joshi, S., Idris, A.M.,
+                Tusher, T.R., 2024. Emergence of per- and poly-fluoroalkyl
+                substances (PFAS) and advances in the remediation strategies.
+                Science of The Total Environment 916, 170142.
+                https://doi.org/10.1016/j.scitotenv.2024.170142.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[23]</span
+                >
+                Kumar, A., Pandit, S., Sharma, K., Agrawal, S., Kuhad, R.C.,
+                Mathuriya, A.S., Dikshit, P.K., Mishra, S.K., Seth, C.S.,
+                Prasad, R., 2024. Microbial degradation of cellulose extracted
+                from wheat bran for bioelectricity production using microbial
+                fuel cell. Process Safety and Environmental Protection 190,
+                574–585. https://doi.org/10.1016/j.psep.2024.06.076.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[24]</span
+                >
+                Kumari, S., Mishra, R.K., Sorathiya, V., Priya, K., Pandit, S.,
+                Khan, A.A., Ranjan, N., Malik, S., Rustagi, S., Malik, A.,
+                Jadhav, D.A., 2024. CuO vs. AgO: A comparative study of cathode
+                catalysts for boosting oxygen reduction in microbial
+                desalination cells. Desalination and Water Treatment 320,
+                100637. https://doi.org/10.1016/j.dwt.2024.100637.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[25]</span
+                >
+                Sahni, M., Kumar, A., Gupta, P., Khan, A.A., Mathuriya, A.S.,
+                Pandit, S., Sharma, K., Roy, A., Ranjan, N., Yahya, M.Z.A.,
+                Noor, I.M., 2024a. Role of cadmium gallate nanoparticles on the
+                cathode of microbial fuel cells for enhanced bioelectricity
+                production. Ionics 1–12.
+                https://doi.org/10.1007/s11581-024-05727-7.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[26]</span
+                >
+                Sahni, M., Mishra, R.K., Gupta, A., Thapa, B.S., Thakur, A.,
+                Khan, A.A., Pandit, S., Sharma, K., Roy, A., Malik, A., Jadhav,
+                D.A., 2024b. Investigating the performance of CoFe2O4@TiO2
+                nanomaterial as multifunctional cathode catalyst for
+                simultaneous dye degradation and oxygen reduction in microbial
+                desalination cell. Desalination 587, 117958.
+                https://doi.org/10.1016/j.desal.2024.117958.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[27]</span
+                >
+                Sankhyan, S., Kumar, P., Pandit, S., Kumar, S., Ranjan, N., Ray,
+                S., 2024a. Biological machinery for the production of
+                biosurfactant and their potential applications. Microbiol. Res.
+                285, 127765. https://doi.org/10.1016/j.micres.2024.127765.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[28]</span
+                >
+                Singh, A., Singh, P., Pandit, S., Kumar, S., Tomar, R., 2024.
+                Evaluating the electrochemical boost and antimicrobial power of
+                biogenic zinc oxide-polyaniline nanocomposite. Nano-Struct.
+                Nano-Objects 39, 101264.
+                https://doi.org/10.1016/j.nanoso.2024.101264.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[29]</span
+                >
+                Singh, V., Pandit, C., Ray, S., Pandit, S., Ranjan, N., Sharma,
+                D., Sarma, H., S.j., G., Makkar, R., Rustagi, S., Malik, S.,
+                Prasad, R., Joshi, S.J., 2024. Rhamnolipids: Green Surfactant
+                for Environmental Bioremediation of Polycyclic Aromatic
+                Hydrocarbons (PAHs). Environmental Quality Management 34,
+                e22282. https://doi.org/10.1002/tqem.22282.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[30]</span
+                >
+                Chandra, S., Pandit, S., Deb, S., Mohan, C., Rajeev, M., Ranjan,
+                N., Kumar, A., Dikshit, P.K., 2024. Utilization of Water
+                Chestnut Waste for Biohydrogen Production and Enhanced Power
+                Generation by Stacked Microbial Fuel Cell. Biocatal. Agric.
+                Biotechnol. 103425. https://doi.org/10.1016/j.bcab.2024.103425.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[31]</span
+                >
+                Pandit, C., Kumar, M., Chander Kuhad, R., Sharma, K., Roy, A.,
+                Shukla, R., Pandit, S., Ranjan, N., Mishra, S.K., Prasad, R.,
+                2024. Exploring the performance of biocatalysts for biohydrogen
+                production. Biocatal. Agric. Biotechnol. 60, 103290.
+                https://doi.org/10.1016/j.bcab.2024.103290.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[32]</span
+                >
+                Sankhyan, S., Kumar, P., Sonkar, M., Kumar, S., Pandit, S., Ray,
+                S., 2024b. Co-metabolism of substrates by Pseudomonas aeruginosa
+                NG4 regulates biosurfactant production. Biocatal. Agric.
+                Biotechnol. 61, 103382.
+                https://doi.org/10.1016/j.bcab.2024.103382.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[33]</span
+                >
+                Kim, E., Kang, H., Koo, B., Pandit, S., Lee, M.J., Jung, S.P.,
+                2024. Addition of carbon dioxide enhances electrical power
+                production in a microbial reverse electrodialysis cell. J. Water
+                Process Eng. 68, 106475.
+                https://doi.org/10.1016/j.jwpe.2024.106475.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[34]</span
+                >
+                Padigala, C.T., Satpati, G.G., Singhvi, M., Goswami, L.,
+                Kushwaha, A., Oraon, S., Aleksanyan, K., Smykovskaya, R.S.,
+                Rawindran, H., Wei, L.J., Rajak, R., Pandit, S., Dikshit, P.K.,
+                2024. Nanotechnological advancement in green hydrogen production
+                from organic waste: Recent developments, techno–economic, and
+                life cycle analyses. Int. J. Hydrog. Energy 92, 672–693.
+                https://doi.org/10.1016/j.ijhydene.2024.10.216.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[35]</span
+                >
+                Singh, V., Pandit, C., Pandit, S., Roy, A., Rustagi, S., Awwad,
+                N.S., Ibrahium, H.A., Anand, J., Malik, S., Yadav, K.K.,
+                Tambuwala, M., 2024. Deciphering the Mechanisms and
+                Biotechnological Implications of Nanoparticle Synthesis Through
+                Microbial Consortia. J. Basic Microbiol. 64, e2400035.
+                https://doi.org/10.1002/jobm.202400035.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[36]</span
+                >
+                Sharma, K., Pandit, S., Kumar, A., Pandey, K.K., Jadhav, D.A.,
+                Khan, A.A., Ranjan, N., Fatima, S., 2024. Boosting Microbial
+                Fuel Cell Efficiency via Ultrasonic Pretreatment of Water
+                Hyacinth Biomass. Ind. Eng. Chem. Res. 63, 16823–16832.
+                https://doi.org/10.1021/acs.iecr.4c01295.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[37]</span
+                >
+                Raza, A., Khandelwal, K., Pandit, S., Singh, M., Kumar, S.,
+                Rustagi, S., Ranjan, N., Verma, R., Priya, K., Prasad, R., 2024.
+                Exploring the potential of metallic and metal oxide
+                nanoparticles for reinforced disease management in agricultural
+                systems: A comprehensive review. Environ. Nanotechnol. Monit.
+                Manag. 22, 100998. https://doi.org/10.1016/j.enmm.2024.100998.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[38]</span
+                >
+                Sanchita Bipin Patwardhan, Chetan Pandit, Soumya Pandit*,
+                Devvret Verma, Dibyajit Lahiri, Ram Prasad,2023.Illuminating the
+                signalomics of microbial biofilm on plant surfaces,Biocatalysis
+                and Agricultural Biotechnology,Volume 47,2023,102537,ISSN
+                1878-8181, CS:6.6
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[39]</span
+                >
+                Pandit, S., Khanna, S. & Mathuriya, A.S. Analysis of
+                pyridine-2-carbaldehyde thiosemicarbazone as an anti-biofouling
+                cathodic agent in microbial fuel cell. Appl Microbiol Biotechnol
+                107, 459–472 (2023). https://doi.org/10.1007/s00253-022-12273-7.
+                IF: 5.6
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[40]</span
+                >
+                Vempaty A, Ankit Kumar, Soumya Pandit, Meenal Gupta, Abhilasha
+                Singh Mathuriya, Sanket Joshi, Navin Kumar, Evaluation of the
+                Datura peels derived biochar-based Anode for enhancing power
+                output in microbial fuel cell application, Biocatalysis and
+                Agricultural Biotechnology,Volume 7,2023,102560,ISSN
+                1878-8181,CS:6.6
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[41]</span
+                >
+                Sharma, K.; Pandit, S.; Mathuriya, A.S.; Gupta, P.K.; Pant, K.;
+                Jadhav, D.A. Microbial Electrochemical Treatment of Methyl Red
+                Dye Degradation Using Co-Culture Method. Water 2023, 15, 56.
+                https://doi.org/10.3390/w15010056. IF: 3.53.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[42]</span
+                >
+                Lahiri, D., Nag, M., Dey, A., Sarkar, T., Pati, S., Nirmal,
+                N.P., Ray, R.R., Pandit, S., Kavisri, M., 2023. Marine bioactive
+                compounds as antibiofilm agent: a metabolomic approach. Arch
+                Microbiol 205, 54. https://doi.org/10.1007/s00203-022-03391-x.
+                IF: 2.66
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[43]</span
+                >
+                Naaz, T., Kumar, A., Vempaty, A., Singhal, N., Pandit, S.,
+                Gautam, P., Jung, S.P., 2023. Recent advances in biological
+                approaches towards anode biofilm engineering for improvement of
+                extracellular electron transfer in microbial fuel cells.
+                Environmental Engineering Research 28.
+                https://doi.org/10.4491/eer.2022.666. IF: 3.9
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[44]</span
+                >
+                Pandit, S., Sharma, M., Banerjee, S., Kumar Nayak, B., Das, D.,
+                Khilari, S., Prasad, R., 2023. Pretreatment of cyanobacterial
+                biomass for the production of biofuel in microbial fuel cells.
+                Bioresource Technology 370, 128505.
+                https://doi.org/10.1016/j.biortech.2022.128505. IF: 11.88
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[45]</span
+                >
+                Roy, K., Bannerjee, S., Hazra, T., Das, D., Pandit, S., Lahiri,
+                D., Nag, M., Ray, R.R., Sarkar, T., Moovendhan, M., M.Kavisri,
+                2023. Exopolysaccharide production by Anabaena sp. PCC 7120:
+                physicochemical parameter optimization and two-stage cultivation
+                strategy to maximize the product yield. Biomass Conv. Bioref.
+                https://doi.org/10.1007/s13399-022-03696-3. IF: 4.103.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[46]</span
+                >
+                Chauhan, S., Kumar, A., Pandit, S., Vempaty, A., Kumar, M.,
+                Peera, S.G., 2023. Investigating the Performance of a Zinc Oxide
+                Impregnated Polyvinyl Alcohol-Based Low-Cost Cation Exchange
+                Membrane in Microbial Fuel Cells. Membranes 13, 55.
+                https://doi.org/10.3390/membranes13010055. IF: 4.56.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[47]</span
+                >
+                Ghosh, S., Mondol, S., Lahiri, D., Nag, M., Sarkar, T., Pati,
+                S., Pandit, S., Alarfaj, A.A., Mohd Amin, M.F., Edinur, H.A.,
+                Ahmad Mohd Zain, M.R., Ray, R.R., 2023. Biogenic silver
+                nanoparticles (AgNPs) from Tinosporacordifolia leaves: An
+                effective antibiofilm agent against Staphylococcus aureus ATCC
+                23235. Frontiers in Chemistry 11.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[48]</span
+                >
+                Kumar, A., Sharma, K., Pandit, S.*, Mathuriya, A.S., Prasad, R.,
+                2023. Evaluation of the algal-derived biochar as an anode
+                modifier in microbial fuel cells. Bioresource Technology Reports
+                22, 101414. https://doi.org/10.1016/j.biteb.2023.101414.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[49]</span
+                >
+                Pema, T., Kumar, A., Tripathi, B., Pandit, S., Chauhan, S.,
+                Singh, S., Dikshit, P.K., Mathuriya, A.S., Gupta, P.K., Lahiri,
+                D., Singh, R.C., Anand, J., Chaubey, K.K., 2023. Investigating
+                the Performance of Lithium-Doped Bismuth Ferrite
+                [BiFe1−xLixO3]-Graphene Nanocomposites as Cathode Catalyst for
+                the Improved Power Output in Microbial Fuel Cells. Catalysts 13,
+                618. https://doi.org/10.3390/catal13030618.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[50]</span
+                >
+                Varshney, A., Sharma, L., Pandit, C., Gupta, P.K., Mathuriya,
+                A.S., Pandit, S., Lahiri, D., Nag, M., Upadhye, V.J., 2023.
+                Microbial Fuel Cell-Based Biosensors and Applications. Appl
+                Biochem Biotechnol. https://doi.org/10.1007/s12010-023-04397-x.
+                IF: 3.09.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[51]</span
+                >
+                Kumar, M., Pandit, S., Patel, V., Khanna, N., Nag, M., Lahiri,
+                D., Ray, R.R., Das, A., Das, D., 2023. Maximization of Energy
+                Recovery from Starch Processing Wastewater by Thermophilic Dark
+                Fermentation Coupled with Microbial fuel Cell Technology.
+                Geomicrobiol. J. 0, 1–12.
+                https://doi.org/10.1080/01490451.2023.2209555. IF: 2.3.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[52]</span
+                >
+                Naaz, T., Lahiri, D., Pandit, S., Nag, M., Gupta, P.K.,
+                Al-Dayan, N., Rai, N., Chaubey, K.K., Gupta, A.K., 2023.
+                Antimicrobial Peptides Against Microbial Biofilms: Efficacy,
+                Challenges, and Future Prospect. Int. J. Pept. Res. Ther. 29,
+                48. https://doi.org/10.1007/s10989-023-10519-0. IF: 2.5.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[53]</span
+                >
+                Pandit, C., Banerjee, S., Pandit, S., Lahiri, D., Kumar, V.,
+                Chaubey, K.K., Al-Balushi, R., Al-Bahry, S., Joshi, S.J., 2023.
+                Recent advances and challenges in the utilization of
+                nanomaterials in transesterification for biodiesel production.
+                Heliyon 9. https://doi.org/10.1016/j.heliyon.2023.e15475. IF:
+                4.0.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[54]</span
+                >
+                Kumar, A., Siddiqui, T., Pandit, S., Roy, A., Gacem, A.,
+                Souwaileh, A.A., Mathuriya, A.S., Fatma, T., Sharma, P.,
+                Rustagi, S., Yadav, K.K., Jeon, B.-H., Park, H.-K., 2023.
+                Application of Biogenic TiO2 Nanoparticles as ORR Catalysts on
+                Cathode for Enhanced Performance of Microbial Fuel Cell.
+                Catalysts 13, 937. https://doi.org/10.3390/catal13060937. IF:
+                3.9.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[55]</span
+                >
+                Alghamdi, S., Khandelwal, K., Pandit, S., Roy, A., Ray, S.,
+                Alsaiari, A.A., Aljuaid, A., Almehmadi, M., Allahyani, M.,
+                Sharma, R., Anand, J., Alshareef, A.A., 2023. Application of
+                nanomaterials as potential quorum quenchers for disease: Recent
+                advances and challenges. Progress in Biophysics and Molecular
+                Biology 184, 13–31.
+                https://doi.org/10.1016/j.pbiomolbio.2023.08.005. IF: 3.8.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[56]</span
+                >
+                Borehalli Mayegowda, S., Roy, A., N. G., M., Pandit, S.,
+                Alghamdi, S., Almehmadi, M., Allahyani, M., Awwad, N.S., Sharma,
+                R., 2023. Eco-friendly synthesized nanoparticles as
+                antimicrobial agents: an updated review. Frontiers in Cellular
+                and Infection Microbiology 13. IF: 5.7.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[57]</span
+                >
+                Chauhan, S., Rai, S., Pandit, S., Roy, A., Gacem, A., El-Hiti,
+                G.A., Yadav, K.K., Ravindran, B., Cheon, J.-K., Jeon, B.-H.,
+                2023. Neodymium-Doped Zinc Oxide Nanoparticles Catalytic Cathode
+                for Enhanced Efficiency of Microbial Desalination Cells.
+                Catalysts 13, 1164. https://doi.org/10.3390/catal13081164. IF:
+                3.9.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[58]</span
+                >
+                Idris, D.S., Roy, A., Pandit, S., Alghamdi, S., Almehmadi, M.,
+                Alsaiari, A.A., Abdulaziz, O., Alsharif, A., Khandaker, M.U.,
+                Faruque, M.R.I., 2023. Polymer-based nanocarriers for biomedical
+                and environmental applications. e-Polymers 23.
+                https://doi.org/10.1515/epoly-2023-0049. IF: 3.074.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[59]</span
+                >
+                Roy, R., Samanta, S., Pandit, S., Naaz, T., Banerjee, S., Rawat,
+                J.M., Chaubey, K.K., Saha, R.P., 2023. An Overview of
+                Bacteria-Mediated Heavy Metal Bioremediation Strategies. Appl
+                Biochem Biotechnol. https://doi.org/10.1007/s12010-023-04614-7.
+                IF: 2.9.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[60]</span
+                >
+                Singh, N.K., Mathuriya, A.S., Mehrotra, S., Pandit, S., Singh,
+                A., Jadhav, D., 2023. Advances in bioelectrochemical systems for
+                bio-products recovery. Environmental Technology 0, 1–24.
+                https://doi.org/10.1080/09593330.2023.2234676. IF: 2.8.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[61]</span
+                >
+                Chandra, S., Bhattacharya, S., Pandit, S., Banerjee, S., Roy,
+                A., Rai, A.K., 2023. Cyanobacteria as an eco-friendly
+                bioresource for EPS production with crack healing capacity in
+                concrete. Biocatalysis and Agricultural Biotechnology 102909.
+                https://doi.org/10.1016/j.bcab.2023.102909. IF: 4.8.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[62]</span
+                >
+                Gupta, A., Roy, A., Pandit, S., Pandey, N., Rustagi, S., 2023.
+                Evaluation of Bioactive Compounds Obtained from Ginkgo Biloba
+                Against Crystal Structure of Myelin Oligodendrocyte Glycoprotein
+                (MOG). OBM Neurobiology 7, 1–34.
+                https://doi.org/10.21926/obm.neurobiol.2304186.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[63]</span
+                >
+                Kumar, A., Pandit, S., Sharma, K., Mathuriya, A.S., Prasad, R.,
+                2023. Evaluation of bamboo derived biochar as anode catalyst in
+                microbial fuel cell for xylan degradation utilizing microbial
+                co-culture. Bioresource Technology 390, 129857.
+                https://doi.org/10.1016/j.biortech.2023.129857. IF: 11.4.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[64]</span
+                >
+                Kumar, A.; Narayanan, S.S.; Thapa, B.S.; Pandit, S.*; Pant, K.;
+                Mukhopadhyay, A.K.; Peera, S.G. Application of Low-Cost
+                Plant-Derived Carbon Dots as a Sustainable Anode Catalyst in
+                Microbial Fuel Cells for Improved Wastewater Treatment and Power
+                Output. Catalysts 2022, 12, 1580.
+                https://doi.org/10.3390/catal12121580. IF:4.58.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[65]</span
+                >
+                Sharma K, Singh V, Pandit S*, Thapa BS, Pant K, Tusher TR.
+                Isolation of Biosurfactant-Producing Bacteria and Their
+                Co-Culture Application in Microbial Fuel Cell for Simultaneous
+                Hydrocarbon Degradation and Power Generation. Sustainability.
+                2022; 14(23):15638. https://doi.org/10.3390/su142315638. IF:
+                3.6.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[66]</span
+                >
+                Pandit, C., Pandit, S., Pant, M. et al. A Concise Review on the
+                Synthesis, and Characterization of the Pyrolytic Lignocellulosic
+                Biomass for Oil, Char and Gas Production: Recent Advances and
+                its Environmental Application. Chemistry Africa (2022).
+                https://doi.org/10.1007/s42250-022-00512-3.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[67]</span
+                >
+                Sharma K, Pandit S*, Thapa BS, Pant M. Biodegradation of Congo
+                Red Using Co-Culture Anode Inoculum in a Microbial Fuel Cell.
+                Catalysts. 2022; 12(10):1219.
+                https://doi.org/10.3390/catal12101219. IF: 4.58.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[68]</span
+                >
+                Tripathi B, Pandit S*, Sharma A, Chauhan S, Gupta PK, Singh RC,
+                Sahni M, Pant K, Singh S. Modification of Graphite Sheet Anode
+                with Iron (II, III) Oxide-Carbon Dots for Enhancing the
+                Performance of Microbial Fuel Cell. Catalysts. 2022; 12(9):1040.
+                https://doi.org/10.3390/catal12091040. IF: 4.58.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[69]</span
+                >
+                Thapa BS, Pandit S*, Patwardhan SB, Tripathi S, Mathuriya AS,
+                Gupta PK, Lal RB, Tusher TR. Application of Microbial Fuel Cell
+                (MFC) for Pharmaceutical Wastewater Treatment: An Overview and
+                Future Perspectives. Sustainability. 2022; 14(14):8379.
+                https://doi.org/10.3390/su14148379. IF: 3.56.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[70]</span
+                >
+                Karmakar, M., Lahiri, D., Nag, M. , Pandit S, Purification,
+                Characterization, and Application of Endoglucanase from Rhizopus
+                oryzae as Antibiofilm Agent. Appl Biochem Biotechnol (2022).
+                https://doi.org/10.1007/s12010-022-04043-y. IF: 4.01.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[71]</span
+                >
+                Lahiri, D., Nag, M., Pandit S, Dey, A. et al. Citrus Essential
+                Oils: a Treasure Trove of Antibiofilm Agent. Appl Biochem
+                Biotechnol 194, 4625–4638 (2022).
+                doi.org/10.1007/s12010-022-04033-0. IF: 4.01.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[72]</span
+                >
+                Dantuluri Raju, A Nagarajan, S Pandit, M Nag, D Lahiri, Effect
+                of bacterial quorum sensing and mechanism of antimicrobial
+                resistance,Biocatalysis and Agricultural Biotechnology,Volume
+                43, 2022,102409,ISSN 1878-8181. CS: 6.6.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[73]</span
+                >
+                Dutta B, Lahiri D, Nag M, Abukhader R, Sarkar T, Pati S, Upadhye
+                V, Pandit S, Amin MFM, Al Tawaha ARMS, Kumar M and Ray RR (2022)
+                Multi-Omics Approach in Amelioration of Food Products. Front.
+                Microbiol. 13:955683. doi: 10.3389/fmicb.2022.955683. IF: 6.6.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[74]</span
+                >
+                Yeganeh, F.E.; Yeganeh, A.E.; Far, B.F.; Mansouri, A.; Sibuh,
+                B.Z.; Krishnan, S.; Pandit, S.; Alsanie, W.F.; Thakur, V.K.;
+                Gupta, P.K. Synthesis and Characterization of Tetracycline
+                Loaded Methionine-Coated NiFe2O4 Nanoparticles for Anticancer
+                and Antibacterial Applications. Nanomaterials 2022, 12, 2286.
+                https://doi.org/10.3390/nano12132286. IF: 5.71.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[75]</span
+                >
+                A Bhunia, D Lahiri, M Nag, V Upadhye, S Pandit, Bacterial
+                biofilm mediated bioremediation of hexavalent chromium: A
+                review, Biocatalysis and Agricultural Biotechnology, Volume
+                43,2022,102397, https://doi.org/10.1016/j.bcab.2022.102397.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[76]</span
+                >
+                OO Kolajo, C Pandit, BS Thapa, S Pandit, AS Mathuriya, PK Gupta,
+                DA. Jadhav, D Lahiri, M Nag, VJ Upadhye, Impact of cathode
+                biofouling in microbial fuel cells and mitigation techniques,
+                Biocatalysis and Agricultural Biotechnology, Volume
+                43,2022,102408, https://doi.org/10.1016/j.bcab.2022.102408.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[77]</span
+                >
+                D Bharathi, JG Thiruvengadam Nandagopal, R Rajamani, S Pandit, D
+                Kumar, B Pant, S Pandey, PK Gupta, Enhanced photocatalytic
+                activity of St-ZnO nanorods for methylene blue dye degradation,
+                Materials Letters, Volume 311,2022,131637, ISSN 0167 577X,
+                https://doi.org/10.1016/j.matlet.2021.131637. IF: 3.57.
+              </p>
+            </section>
+          </div>
+        </div>
 
-        <section class="space-y-4">
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[1]</span
+        <h2 id="accordion-collapse-heading-2">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-collapse-body-2"
+            aria-expanded="false"
+            aria-controls="accordion-collapse-body-2"
+          >
+            <span class="text-2xl font-bold">Books & Book Chapters</span>
+            <svg
+              data-accordion-icon
+              class="w-3 h-3 shrink-0"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
             >
-            Soumyajit Chandra, Krishna Kumar Pandey, Soumya Pandit, Arpita Roy,
-            Mithul Rajeev, Kuldeep Sharma, Rajan Verma “Ultrasonication of
-            microalgal biomass: Acoustics study and enhanced bioelectricity
-            generation in microbial fuel cells” Bioresource Technology, 2025,
-            424, 132289 [IF: 9.7]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[2]</span
-            >
-            Soumyajit Chandra, Soumya Pandit, Arpita Roy, Safia Obaidur Rab,
-            Amit Kumar Roy, Mohd Saeed, Ashish Kumar, Kuldeep Sharma, Nishant
-            Ranjan, Swetha Raj “Bioenergy recovery from jackfruit waste via
-            biohydrogen production through dark fermentation and power
-            generation through stacked microbial fuel cells” International
-            Journal of Hydrogen Energy. 2025, 102, 845-855[IF: 8.1]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[3]</span
-            >
-            Dahir Sagir Idris, Arpita Roy* “Green Synthesis of Silver
-            Oxide-Nickel Oxide Bimetallic Nanoparticles Using Peels of Citrus
-            sinensis and Their Application” Journal of Inorganic and
-            Organometallic Polymers and Materials, 2024. [IF: 3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[4]</span
-            >
-            Aaryan Gupta, Arpita Roy* Amit Roy, Vaseem Raja, Kuldeep Sharma,
-            Rajan Verma. Role of Medicinal Plants in the Management of Multiple
-            Sclerosis. Current Pharmaceutical Biotechnology, 2024[IF: 2.2]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[5]</span
-            >
-            Arpita Roy*, Aaryan Gupta, Benazeer Haque, Absar Ahmed Qureshi,
-            Devvret Verma, Kuldeep Sharma, Siaw Foon Lee, Cheng Wan Hee, Amit
-            Roy, Rajan Verma. An Updated Review on Carbon Nanomaterials: Types,
-            Synthesis, Properties, Functionalization and Applications,
-            Degradation and Toxicity. Green Processing and Synthesis, 2024,
-            13(1), 20240150. [IF: 3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[6]</span
-            >
-            Harsh Sable, Vaishali Kumar, Richa Mishra, Sushil Kumar, Soumya
-            pandit, Vandana Singh, Arpita Roy, Nishant Ranjan, Kuldeep Sharma,
-            Rajan Verma. “Biosorption of Hexavalent Chromium by Shewanella
-            putrefaciens MTCC 8104: Response Surface Methodology Optimization
-            and Mechanistic Insights”. Indian Journal of Microbiology, 2024.
-            [IF: 2.1]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[7]</span
-            >
-            Arpita Roy*, Srijal Kunwar, Utsav Bhusal, Dahir Sagir Idris, Saad
-            Alghamdi, Kumarappan Chidamabaram, Absar A. Qureshi, Naeem F Qusty,
-            Abduljawad Abdulshakor Khan. Dye degradation activity of
-            biogenically synthesized Cu/Fe/Ag trimetallic nanoparticles. Green
-            Processing and Synthesis, 2024, 13(1), 20230267. [IF: 3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[8]</span
-            >
-            Sorimuthu Revathi, Nibedita Dey, Subramanian Thangaleela, Saranya
-            Vinayagam, Lalitha Gnanasekaran, Thanigaivel Sundaram, Abdul Malik,
-            Azmat Ali Khan, Arpita Roy*, Nanocarrier Optimization: Encapsulating
-            Hydrastis canadensis in Chitosan nanoparticles for Enhanced
-            Antibacterial and Dye Degradation Performance. International Journal
-            of Biological Macromolecules, 2024, Volume 274, Part 1, August 2024,
-            133316 [IF: 7.7]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[9]</span
-            >
-            Vandana Singh, Chetan Pandit, Soumya Pandit, Arpita Roy, Sarvesh
-            Rustagi, Nasser S Awwad, Hala A Ibrahium, Jigisha Anand, Sumira
-            Malik, Krishna Kumar Yadav, Murtaza Tambuwala. Deciphering the
-            Mechanisms and Biotechnological Implications of Nanoparticle
-            Synthesis Through Microbial Consortia. Journal of Basic
-            Microbiology, e2400035 [IF: 3.5]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[10]</span
-            >
-            Benazeer Haque, Aaryan Gupta, Arpita Roy*, Abdul Malik, Azmat Ali
-            Khan. Green fabrication of Ag-Ni-Mn-Zn nanoparticles from watermelon
-            peels and its antioxidant, dye degradation and molecular docking
-            studies. Clean Technologies and Environmental Policy, 2024 [IF: 4.2]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[11]</span
-            >
-            Aaryan Gupta, Benazeer Haque, Arpita Roy*, Abdul Malik, Azmat Ali
-            Khan, Kirtanjot Kaur, Amit Roy. Antioxidant, dye degradation, and
-            molecular docking studies of orange peel extract derived Ag-Fe-Ni
-            nanoparticles. Inorganic Chemistry Communications, 2024, Volume 166,
-            112599 [IF: 4.4]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[12]</span
-            >
-            Masirah Zahid Shah, Marzuqa Quraishi, Anushree Sreejith, Soumya
-            Pandit, Arpita Roy*, Mayeen Uddin Khandaker. Sustainable degradation
-            of synthetic plastics: A solution to rising environmental concerns.
-            Chemosphere, 2025. https://doi.org/10.1016/j.chemosphere.2024.141451
-            [IF: 8.1]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[13]</span
-            >
-            Jaya Lakkakula, Rui Werner Macedo Krause, Sagar Barage, Advait
-            Joshi, Smitali Patil, Azmat Ali Khan, Arpita Roy*, Exploring oral
-            drug delivery: In vitro release and mathematical modeling of
-            hydrophobic drug (Na-L-thyroxine) and its cyclodextrin inclusion
-            complex in chitosan microparticles. International Journal of
-            Biological Macromolecules, Volume 265, Part 2, 2024, 131019 [IF:
-            7.7]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[14]</span
-            >
-            Debarshi Pal, Srijoni Banerjee, Soumyajit Chandra, Debabrata Das,
-            Soumya Pandit, Arpita Roy, Mudassir Hasan, Mayeen Uddin Khandaker,
-            Maha Awjan Alreshidi. The generation of biohydrogen from pretreated
-            algal biomass in batch fermentation mode. International Journal of
-            Hydrogen Energy, 2024.
-            https://doi.org/10.1016/j.ijhydene.2024.01.078 [IF: 8.1]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[15]</span
-            >
-            Arpita Roy*, Fernanda Maria Policarpo Tonelli Biomolecules-derived
-            synthesis of nanomaterials for environmental and biological
-            applications. Green Processing and Synthesis 2023; 12: 20230219 [IF:
-            3.9] (editorial)
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[16]</span
-            >
-            Soumyajit Chandra, Subarna Bhattacharya, Soumya Pandit, Srijoni
-            Banerjee, Arpita Roy, Ashutosh Kumar Rai. Cyanobacteria as an
-            eco-friendly bioresource for EPS production with crack healing
-            capacity in concrete. Biocatalysis and Agricultural Biotechnology,
-            2023, 54, 102909. [IF: 3.4]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[17]</span
-            >
-            Dahir Sagir Idris, Arpita Roy* “Biogenic synthesis of Ag-CuO
-            nanoparticles and its antibacterial, antioxidant, and catalytic
-            activity” Journal of Inorganic and Organometallic Polymers and
-            Materials, 2023. https://doi.org/10.1007/s10904-023-02873-9 [IF:
-            3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[18]</span
-            >
-            Dahir Sagir Idris, Arpita Roy*, Anandhalakshmi Subramanian, Saad
-            Alghamdi, Kumarappan Chidamabaram & Naeem F. Qusty “Bio-fabrication
-            of Silver–Zinc Bimetallic Nanoparticles and Its Antibacterial and
-            Dye Degradation Activity” Journal of Inorganic and Organometallic
-            Polymers and Materials, 2023.
-            https://doi.org/10.1007/s10904-023-02936-x [IF: 3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[19]</span
-            >
-            Harshala Sandip Naik, Parvindar Manejar Sah, Manali Dhangade, Jaya
-            Lakkakula, Rajesh Warluji Raut, Arpita Roy*, Saad Alghamdi, Naeem
-            Qusty, Zain Alhindi, Ahmed Kabrah, Anju Rani Synthesis of a silica
-            matrix with ZnO nanoparticles for the fabrication of a recyclable
-            photodegradation system to eliminate methylene blue dye. Green
-            Processing and Synthesis 2023; 12: 20230157 [IF: 3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[20]</span
-            >
-            Utsav Bhusal, Arpita Roy*, Srijal Kunwar. Bio-fabrication of
-            Cu/Fe/Zn nanoparticles and its antioxidant and catalytic activity.
-            Chemical Papers, 2023. https://doi.org/10.1007/s11696-023-03001-0
-            [IF: 2.1]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[21]</span
-            >
-            Dahir Sagir Idris, Arpita Roy*, Soumya Pandit, Saad Alghamdi, Mazen
-            Almehmadi, Ahad Amer Alsaiari, Osama Abdulaziz, Abdulaziz Alsharif,
-            Mayeen Uddin Khandaker, Mohammad Rashed Iqbal Faruque,
-            “Polymer-based nanocarriers for biomedical and environmental
-            applications”. e-Polymers, 2023:23: 20230049 [IF: 3.2]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[22]</span
-            >
-            Tahseena Naaza, Kalpana Sharmaa, Arpita Roy, Abhilasha Singh
-            Mathuriya, Vineeta Yadav, Soumya Pandit, Mud assir Hasan, Jigisha
-            Anand, Sanket Joshi, Rohit Sharma. Simultaneous Microbial
-            electrochemical degradation of Methyl Orange and bioelectricity
-            generation using Coculture as Anode Inoculum in a Microbial Fuel
-            Cell. Food and Chemical Toxicology, 2023.
-            https://doi.org/10.1016/j.fct.2023.114058 [IF: 3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[23]</span
-            >
-            Saad Alghamdi, Krisha Khandelwal, Soumya Pandit, Arpita Roy*,
-            Subhasree Ray, Ahad Amer Alsaiari, Abdulelah Aljuaid, Mazen
-            Almehmadi, Mamdouh Allahyani, Rohit Sharma, Jigisha Anand, Ahmad
-            Adnan Alshareef “Application of nanomaterials as potential quorum
-            quenchers for disease: Recent advances and challenges”. Progress in
-            Biophysics and Molecular Biology, 2023, 184, 13-31[IF: 3.2]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[24]</span
-            >
-            Sachin Bhusari, Parvindar M. Sah, Jaya Lakkakula, Arpita Roy*,
-            Rajesh Raut, Ramesh Chondekar, Saad Alghamdi, Mazen Almehmadi,
-            Mamdouh Allahyani, Ahad Amer Alsaiari, Abdulelah Aljuaid, Nabeela
-            Al-Abdullah. Green synthesis of silver nanoparticles via Taxus
-            wallichiana Zucc. plant-derived Taxol: Novel utilization as
-            anticancer, antioxidation, anti-inflammation, and antiurolithic
-            potential. Green Processing and Synthesis 2023; 12: 20230051 [IF:
-            3.9]
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[25]</span
-            >
-            Yogeshwar Baste, Vikram Jadhav, Arpita Roy*, Saad Alghamdi, Mohamed
-            Abbas, Jari S Algethami, Mazen Almehmadi, Mamdouh Allahyani, Devvret
-            Verma, Krishna Kumar Yadav, Byong-Hun Jeon, Hyun-Kyung Park, “Polyol
-            Synthesis of Ag-Doped Copper Oxide Nanoparticles as a Methylene
-            Blue-Degrading Agent”, Catalysts, 2023, 13 (7), 1143 [IF: 3.8]
-          </p>
-        </section>
-      </div>
-
-      <!-- Patent Publications Section -->
-      <div class="w-full mb-12">
-        <h2 class="text-2xl font-bold dark:text-white mb-4">
-          Patent Publications
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5 5 1 1 5"
+              />
+            </svg>
+          </button>
         </h2>
-        <hr class="border-gray-200 dark:border-gray-700 mb-4" />
+        <div
+          id="accordion-collapse-body-2"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-2"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <section class="space-y-4">
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[1]</span
+                >
+                Microbial fuel cell performance improvement by optimizing
+                parameters. 2017. (Monograph). S Pandit, MM Ghangrekar, and D
+                Das. LAP LAMBERT Academic Publishing. OmniScriptum GmbH & Co.
+                KG. 2017-06-07. Bahnhofstraße 28, D-66111 Saarbrücken.
+                Project-ID (157381) and the book’s ISBN (978-3-330-08816-0). 232
+                pages. June 7, 2017.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[2]</span
+                >
+                “Industrial Biotechnology”. CRC Press (Taylor & Francis). S
+                Pandit, and D Das. Hb: 978-0-367-40888-6 | eBook:
+                978-0-367-82241-5. CRC Press; 1st edition (May 6, 2021).
+                https://doi.org/10.1201/9780367822415.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[3]</span
+                >
+                “Scaling-up of the microbial electrochemical system: From
+                reality to scalability”, Publisher “Elsevier”, 2022. The
+                published volume is Scopus Indexed. Editors: Dr. Deepak Jadhav
+                (Korea Maritime University); Dr. Soumya Pandit (Sharda
+                University, Greater Noida). ISBN: 9780323907651.
+                https://doi.org/10.1016/C2020-0-03641-8.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[4]</span
+                >
+                “Bio-Clean Energy Technologies” volume 1, Publisher “Springer”,
+                2022-23. Scopus Indexed. Editors: Namita Khanna (BITS Dubai);
+                Dr. Pankaj Chowdhary (IITR, CSIR); Dr. Soumya Pandit (Sharda
+                University, Greater Noida). Hardcover ISBN: 978-981-16-8089-2;
+                DOI:10.1007/978-981-16-8090-8. Series Title: Clean Energy
+                Production Technologies. Softcover ISBN 978-981-16-8092-2;
+                Published: 01 June 2023.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[5]</span
+                >
+                “Bio-Clean Energy Technologies” volume 2, Publisher “Springer”,
+                2022-23. Scopus Indexed. Editors: Namita Khanna (BITS Dubai);
+                Dr. Pankaj Chowdhary (IITR, CSIR); Dr. Soumya Pandit (Sharda
+                University, Greater Noida). eBook ISBN 978-981-16-8094-6;
+                Published: 07 July 2022. 978-981-16-8093-9; Published: 07 July
+                2022, DOI: 10.1007/978-981-16-8094-6. Series Title: Clean Energy
+                Production Technologies. Softcover ISBN 978-981-16-8096-0,
+                Published: 08 July 2023.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[6]</span
+                >
+                “Green Technologies for Industrial Waste Remediation”, Scopus
+                Indexed. Editors: Mathuriya, A.S., Pandit, S., Singh, N.K.
+                (Eds.), 2023. Environmental Science and Engineering. Springer
+                Nature Switzerland, Cham.
+                https://doi.org/10.1007/978-3-031-46858-2. ISBN:
+                978-3-031-46857-5. https://doi.org/10.1007/978-3-031-46858-2.
+                eBook ISBN 978-3-031-46858-2. Published: 29 November 2023.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[7]</span
+                >
+                “Recent Trends and Developments in Algal Biofuels and
+                Biorefinery” Scopus Indexed. Editors: N Bharadvaja, L Kumar, S
+                Pandit, S Banerjee, R Anand (Eds.), 2024. Springer Nature
+                Switzerland, Cham. https://doi.org/10.1007/978-3-031-52319-9.
+                ISBN 978-3-031-52318-2. Published: 06 July 2024.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[8]</span
+                >
+                “Advancements in Bio-systems and Technologies for Wastewater
+                Treatment” . Scopus Indexed. Editors: S Pandit, L Kumar, AS
+                Mathuriya, D A Jadhav, S Ray (Eds.), 2024. Springer Nature
+                Switzerland, Cham. https://doi.org/10.1007/978-3-031-58331-5.
+                ISBN 978-3-031-58330-8. Published: 31 July 2024.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[9]</span
+                >
+                “Synergy of Bio-Chemical Processes for Photocatalytic and
+                Photoelectrochemical Wastewater Treatment”. Scopus Indexed.
+                Editors: Sadanand Pandey, Elvis Fosso-Kankeu, Soumya Pandit.
+                Published: 2024/10/22.John Wiley & Sons.ISBN: 978-1-394-19787-3;
+                October 2024. https://doi.org/10.1002/9781394197903.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[10]</span
+                >
+                Microbial Electrolysis Cells for Biohydrogen Production. Scopus
+                Indexed. Editors: Kyu-Jung Chae, Dipak A. Jadhav, Soumya Pandit,
+                Kyoung-Yeol Kim. doi.org/10.1007/978-3-031-75132-5. Hardcover
+                ISBN 978-3-031-75131-8. Published: 30 December 2024.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[11]</span
+                >
+                Pandit, T.N., Vandana Singh, Subhasree Ray, Kalpana Sharma,
+                Barun Kumar, Soumya, 2023. Fundamentals of Bacterial Quorum
+                Sensing and Antimicrobial Resistance, in: Natural Products. CRC
+                Press.
+              </p>
+            </section>
+          </div>
+        </div>
 
-        <section class="space-y-4">
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[1]</span
+        <h2 id="accordion-collapse-heading-3">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-collapse-body-3"
+            aria-expanded="false"
+            aria-controls="accordion-collapse-body-3"
+          >
+            <span class="text-2xl font-bold">Patents Granted</span>
+            <svg
+              data-accordion-icon
+              class="w-3 h-3 shrink-0"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
             >
-            Biogenic synthesis of Ag-Fe bimetallic nanoparticles and use
-            thereof. Application No. 202311061018. Publication Date: 13/10/2023
-          </p>
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5 5 1 1 5"
+              />
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-collapse-body-3"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-3"
+        >
+          <div
+            class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <section class="space-y-4">
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[1]</span
+                >
+                Title: Earthen material-based cathode separator assembly for
+                scalable bioelectrochemical system. Patent authority: Indian
+                Institute of Technology, Kharagpur: submitted (Ref: Patent
+                Application No.805/KOL/2013). Patent filed: 05/07/2013. Current
+                Status: Published; Granted (2021) Application, Patent
+                Number:349375; Inventor: S Pandit, P Chatterjee, Khilari, S., AN
+                Ghadge, Das D, D Pradhan, MM Ghangrekar.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[2]</span
+                >
+                Title: Development of cost-effective membrane cathode assembly
+                for a single chambered microbial fuel cell. Patent authority:
+                Indian Institute of Technology, Kharagpur; (Ref: Patent
+                Application No.1302/KOL/2013). Patent filed: 14/11/2013.Current
+                Status: Granted (2021). Inventor: Khilari, S., S Pandit, Das D,
+                D Pradhan, MM Ghangrekar.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[3]</span
+                >
+                Title: A microbial desalination cell comprising a perovskite
+                oxide catalyst for oxygen reduction reaction, Inventors: Richa
+                Tomar, Soumya Pandit, Abhilasha Singh Mathuriya, Pramod Kumar
+                Singh, Mohit Sahni, Patent no. 202211001127, Publication Date:
+                15.04.2022. Patent Number: 429738, Granted on 24th April 2023.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[4]</span
+                >
+                Title: ceramic separator-cathode assembly. Inventors: Prasenjit
+                SAHA, Soumya PANDIT, Abhilasha Singh MATHURIYA, Mohit SAHNI,
+                Sanjay KUMAR, Piyush K GUPTA, Santimoy KHILARI, Patent no.
+                202211001127. Granted on 13/11/2023.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[5]</span
+                >
+                Title: Eco-friendly anode chamber cum separator electrode
+                assembly for microbial electrochemical systems. Inventors:
+                Prasenjit SAHA, Soumya PANDIT, Abhilasha Singh MATHURIYA, Mohit
+                SAHNI. Patent application no. 202211016725. Granted on
+                12/12/2024. Patent No. 556147.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[6]</span
+                >
+                Title: Functionalized zeolite-cement Separator composite and
+                Method for preparation thereof. Inventors: Soumya PANDIT,
+                Abhilasha Singh MATHURIYA. Patent application no. 202111007471.
+                Granted on 02.12.2024. Pant no. 555655.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[7]</span
+                >
+                Title: A system for simultaneous treatment of wastewater and
+                waste gas using a Microbial Carbon Capture Cell reactor: Patent
+                authority: Indian Institute of Technology, Kharagpur; (Ref:
+                Patent Application No. 471/KOL/2015). Patent filed: 28/04/15.
+                Grant no. 552531. Granted on 17.10.2024.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[8]</span
+                >
+                Title: Anti-cancer thiosemicarbazone-based compound and method
+                for synthesis thereof. Inventors-Kanupriya, Sonia Khanna, Neha
+                Verma, Soumya Pandit, Piyush Gupta Shilpa Yadav. Patent:
+                Application No-202211010277; Patent filed: 25/02/2022. Granted
+                on 31.01.2024. Grant no. 505579.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[9]</span
+                >
+                Title: Semi-aromatic polyester nanocomposite and method for
+                preparation thereof.: Patent authority: Sharda University.
+                Inventor: Piyush Kumar Gupta; Soumya Pandit, Rekha Gahtori,
+                Bableen flora, Shiva Chander, Sunny Dholpuriya, Sharad Agarwal.
+                Patent: 202111040352. Patent Grant no. Number- 562117; Date of
+                Patent granted on- 06/09/2021.
+              </p>
+            </section>
+          </div>
+        </div>
 
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[2]</span
+        <h2 id="accordion-collapse-heading-4">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-collapse-body-4"
+            aria-expanded="false"
+            aria-controls="accordion-collapse-body-4"
+          >
+            <span class="text-2xl font-bold">Patents Filed/Published</span>
+            <svg
+              data-accordion-icon
+              class="w-3 h-3 shrink-0"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
             >
-            A method for the biogenic synthesis of quad-metallic Ag-Fe-Cu-Ni
-            nanoparticles and use thereof. Application No. 202311066252.
-            Publication Date: 20/10/2023
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[3]</span
-            >
-            A pharmaceutical composition comprising phytochemicals isolated from
-            Betula utilis for lung cancer. Application No.202411002900.
-            Publication Date: 02/02/2024
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[4]</span
-            >
-            A method and apparatus for simultaneous production of organic
-            compounds and power generation. Application No. 202411036173.
-            Publication Date: 21/06/2024
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[5]</span
-            >
-            Integrated vermicompost microbial fuel cell system and method for
-            effective utilization of vermiwash to bioelectricity. Application
-            No. 202411050331. Publication Date: 20/09/2024
-          </p>
-
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[6]</span
-            >
-            A process for conversion of an organic waste into usable energy and
-            a system thereof. Application No. 202411076958. Publication Date:
-            18/10/2024
-          </p>
-        </section>
-      </div>
-
-      <!-- Book Editor Section -->
-      <div class="w-full">
-        <h2 class="text-2xl font-bold dark:text-white mb-4">Book Editor</h2>
-        <hr class="border-gray-200 dark:border-gray-700 mb-4" />
-
-        <section class="space-y-4">
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[1]</span
-            >
-            Maulin P Shah and Arpita Roy. Phytonanotechnology, Springer
-            International, September 2022, ISBN:978-981-19-4811-4.
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[2]</span
-            >
-            Arpita Roy and Amit Kumar Roy. Microbial Fuel Cell: Electricity
-            Generation and Environmental Remediation, Nova Science Publishers,
-            2022, ISBN: 979-8-88697-190-3
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[3]</span
-            >
-            Munir Ozturk, Arpita Roy, Fazilet Vardar-Sukan, Fernanda Maria
-            Policarpo Tonelli, Rouf Ahmad Bhat. Synthesis of bionanomaterials
-            for biomedical applications, Elsevier Inc. 2023. ISBN: 9780323911955
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[4]</span
-            >
-            Fernanda M P Tonelli, Arpita Roy, H C Ananda Murthy. Green
-            Nanoremediation- Sustainable management of environmental pollution,
-            Springer International, 2023. ISBN: 9783031305573
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[5]</span
-            >
-            Arpita Roy. Antidiabetic Plants: Properties and Applications, Nova
-            Science Publishers, 2023. ISBN: 979-8-88697-957-2
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[6]</span
-            >
-            Arpita Roy, Gowhar Rashid, Nihad Ashraf Khan. Polycystic Ovarian
-            Syndrome (PCOS) and Our Biological Clock, Nova Science Publishers,
-            2023 ISBN: 979-8-89113-100-2
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[7]</span
-            >
-            Arpita Roy. Harnessing Medicinal Plants in Cancer Prevention and
-            Treatment. IGI Global, 2024, ISBN13: 9798369316467
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[8]</span
-            >
-            Fernanda M P Tonelli, Arpita Roy, Munir Ozturk, H C Ananda Murthy.
-            Nanotechnology-based sensors for detection of environmental
-            pollution, Elsevier Inc. 2024. ISBN: 9780443141188
-          </p>
-          <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <span class="font-semibold text-blue-600 dark:text-blue-500"
-              >[9]</span
-            >
-            Fernanda M P Tonelli, Arpita Roy, Khalid Rehman Hakeem. Sustainable
-            Nanoremediation Modern Technologies for a Clean Environment, Apple
-            Academic Press, 2024, ISBN: 9781003468950
-          </p>
-        </section>
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5 5 1 1 5"
+              />
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-collapse-body-4"
+          class="hidden"
+          aria-labelledby="accordion-collapse-heading-4"
+        >
+          <div
+            class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+          >
+            <section class="space-y-4">
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[1]</span
+                >
+                Title: bimetallic-semi-aromatic polyester nanocomposite and
+                method for preparation thereof. Patent authority: Sharda
+                University. Patent: 202111040353.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[2]</span
+                >
+                Title: Strategic Blending of Activated coffee shell
+                husk-portland slag cement separator and method for preparation
+                thereof. Patent no. 202311041468.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[3]</span
+                >
+                Title: Biochar composite impregnated anode and method for
+                fabrication thereof, Patent no. 202111040351.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[4]</span
+                >
+                Title: Multi electrode, horizontal Serpentine flow microbial
+                fuel cell. Patent authority: Sharda University. Patent:
+                202111007473.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[5]</span
+                >
+                Title: Functionalized Zeolite-Cement Separator composite and
+                method for preparation thereof. Patent authority: Sharda
+                University. Patent No: 202111007471.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[6]</span
+                >
+                Title: Anti-biofouling composition and method for preparation
+                thereof. Patent: IN 202111044362.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[7]</span
+                >
+                Title: Anti-microbial chitosan-based nanoparticles composition
+                and method for fabrication thereof, Patent no. 202111040350.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[8]</span
+                >
+                Title: A polymer electrolyte composition and method of
+                preparation thereof, Patent: Application number: 202111048926.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[9]</span
+                >
+                Title: Method for synthesis of carbon dots, Patent no.
+                202111052403.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[10]</span
+                >
+                Title: Eco-friendly anode chamber cum separator electrode
+                assembly for microbial electrochemical systems, Patent no.
+                202211016725.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[11]</span
+                >
+                Title: Eco-friendly anode chamber cum separator electrode
+                assembly for microbial electrochemical systems.Patent no.
+                202211061261.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[12]</span
+                >
+                Title: Multilayer composite separator and method thereof. Patent
+                no. 202211044235.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[13]</span
+                >
+                Title: A microbial desalination cell comprising a perovskite
+                oxide catalyst for oxygen reduction reaction, Patent no.
+                202211021312.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[14]</span
+                >
+                Title: A zeolite-bitumen separator for enhanced performance of
+                bioelectrochemical systems and process for preparing the same.
+                Patent no. 202311031784.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[15]</span
+                >
+                Title: Bioelectrochemical systems for desalination of water and
+                power generation by nano magnetite decorated bioanode. Patent
+                no. 202311030790.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[16]</span
+                >
+                Title: Utilization of Bioremediation of hydrocarbon and
+                simultaneous electricity generation through co-culturing of
+                biosurfactant-producing bacteria with electrogenic bacteria.
+                Patent no. 202311037064.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[17]</span
+                >
+                Title: Green and clean biogas production in microbial
+                electrolysis cells with nickel ferrite nanomaterial-based
+                cathode catalyst. Patent no. 202311036776.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[18]</span
+                >
+                Title: Bio-electrochemical cell for treatment of organic waste
+                Using earthworms. Inventors: Kalpana Sharma, Ankit Kumar, Soumya
+                Pandit, Swati Hazra; Dibyajit Lahiri. Patent no. 202311005693,
+                Publication Date: 28.01.23.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[19]</span
+                >
+                Title: Microbial co-culture for microbial electrochemical
+                system. Inventors: Vandana Singh, Kalpana Sharma, Ankit Kumar,
+                Soumya Pandit, Piyush K Gupta, Srijoni Banerjee, Sagnik Saha.
+                Patent no. 202311003436, Publication Date: 29.05.23.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[20]</span
+                >
+                Title: Green synthesis of alpha-magnetic nanoparticles and its
+                anti-cancer application thereof. Patent no. 202311051995.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[21]</span
+                >
+                Title: A process for conversion of an organic waste into usable
+                energy and a system thereof. Application No. 202411076958.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[22]</span
+                >
+                Title: Eco-friendly bioresource cyanobacteria and microalgae
+                with the ability to produce EPS and repair concrete cracks.
+                Application No. 202411065909.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[23]</span
+                >
+                Title: Integrated vermicompost microbial fuel cell system and
+                method for effective utilization of vermiwash to bioelectricity.
+                Application No. 202411050331.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[24]</span
+                >
+                Title: System to convert voltage output from stacked Microbial
+                Fuel Cell. Application No. 202411063181.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[25]</span
+                >
+                Title: An in-situ system for electricity generation and soil
+                bioremediation. Application No. 202411089964.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[26]</span
+                >
+                Title: Bioreactor containing immobilized pseudomonas beads for
+                methylene blue degradation. Application No. 202411095186.
+              </p>
+              <p class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >[27]</span
+                >
+                Title: Ceramic separator-cathode assembly, Patent no.
+                202211001127.
+              </p>
+            </section>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
@@ -580,7 +1502,7 @@
         class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-center"
       >
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2024 <a href="#" class="hover:underline">Bio-Positive Lab</a>. All
+          >© 2025 <a href="#" class="hover:underline">Bio-Positive Lab</a>. All
           Rights Reserved.
         </span>
       </div>
